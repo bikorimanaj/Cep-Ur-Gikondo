@@ -1,0 +1,74 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+header{
+	width: 100%;
+	height: 80px; 
+    background-color: #1b9bff;
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+/*these are codes for navbar main menu only for any clarification come here and check*/
+nav{
+    padding: 0 0 0 220px;
+}
+nav ul{
+    float: left;
+    padding-top: 20px;
+}
+nav ul li{
+    position: relative;
+    width: 160px;
+    padding: 14px 0;
+    display: inline-block;
+}
+
+nav ul li a{
+    font-size: 18px;
+    font-family: arial;
+    padding: 8px 12px;
+    color: #fff;
+}
+.active,nav ul li a:hover{
+    background: rgb(12,40,100);
+    border-radius: 3px;
+    transition: all .5s;
+}
+/*below there are styles for submenu list for any clarifacation come here and check whatever you need */
+nav ul ul{
+	position: absolute;
+	display: none;
+}
+
+nav ul ul li{
+    background: #1b9bff;
+    position: relative;
+    top: 5px;
+    animation-name: moving;
+    animation-direction: reverse;
+    animation-duration: .8s;
+}
+@keyframes moving{
+	100%{
+		position: relative;
+		top: 70px;
+	}
+}
+nav ul  li:hover ul{
+display: block;
+}
+nav ul ul li a:hover{
+	border-bottom: 1px solid green
+	;
+	background: none;
+}
